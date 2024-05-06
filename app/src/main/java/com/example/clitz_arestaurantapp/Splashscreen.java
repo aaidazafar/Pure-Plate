@@ -1,7 +1,5 @@
 package com.example.clitz_arestaurantapp;
 
-import androidx.appcompat.app.AppCompatActivity;
-
 import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
@@ -18,7 +16,7 @@ public class Splashscreen<handler, SPLASH_TIME_OUT> extends Activity {
         new Handler().postDelayed(new Runnable() {
             @Override
             public void run() {
-                Intent i = new Intent(Splashscreen.this, MainActivity.class);
+                Intent i = new Intent(Splashscreen.this, mainActivity.class);
                 startActivity(i);
                 finish();
             }
